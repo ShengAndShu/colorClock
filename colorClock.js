@@ -19,15 +19,13 @@ jQuery.fn.colorClock=function(options){
     var colors=["#33B5E5","#0099CC","#AA66CC","#9933CC","#99CC00","#669900","#FFBB33","#FF8800","#FF4444","#CC0000"];
     var currentTime=new Date();
 
-
-    var canvas=document.getElementById("colorClock");
-    canvas.width=canvasWidth;
-    canvas.height=canvasHeight;
-    $(canvas).css({
+    this[0].width=canvasWidth;
+    this[0].height=canvasHeight;
+    this.css({
         "position":"absolute",
         "z-index":"99"
     });
-    var context=canvas.getContext("2d");
+    var context=this[0].getContext("2d");
     setInterval(function(){
             render(context);
             update();
