@@ -9,7 +9,7 @@ colorClock是一个基于jQuery和canvas的插件，它能够在你的页面上�
 3.**javascript**<br>
 ```$(function(){
     $('clock').colorClock();
-});<br><br>
+});```<br><br>
 4.**配置**<br>
         clockColor：字符串，默认"rgb(200,200,200)"<br>
         canvasWidth: 整数，默认Math.round(document.documentElement.clientWidth/4)<br>
