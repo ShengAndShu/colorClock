@@ -2,6 +2,7 @@
 colorClock是一个基于jQuery和canvas的插件，它能够在你的页面上插入一个动画时钟。
 ## 使用方法
 ###1.引入文件
+    <script src="jquery.min.js"></script>
     <script src="colorClock.js"></script> 
 ###2.HTML
     <canvas id="clock" style="right:0; bottom:0"></canvas>
