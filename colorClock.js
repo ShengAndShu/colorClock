@@ -1,10 +1,10 @@
 jQuery.fn.colorClock=function(options){
     $options=$.extend({
         clockColor:"rgb(200,200,200)",
-        canvasWidth:Math.round(document.documentElement.clientWidth/4),
-        canvasHeight:Math.round(document.documentElement.clientHeight/4),
-        paddingLeft:Math.round(document.documentElement.clientWidth/80),
-        paddingTop:Math.round(document.documentElement.clientHeight/80),
+        canvasWidth:Math.round($(document).innerWidth()/4),
+        canvasHeight:Math.round($(document).innerHeight()/4),
+        paddingLeft:Math.round($(document).innerWidth()/80),
+        paddingTop:Math.round($(document).innerHeight()/80),
         maxBalls:300,
     },options);
     
@@ -14,7 +14,7 @@ jQuery.fn.colorClock=function(options){
         paddingLeft=$options.paddingLeft,
         paddingTop=$options.paddingTop,
         maxBalls=$options.maxBalls;
-    var RADIUS=Math.round(canvasWidth*4/5/108)-1; 
+    var RADIUS=Math.min(Math.round(canvasWidth*4/5/108)-1,Math.round(canvasHeight/30)-1); 
     var balls=[];
     var colors=["#33B5E5","#0099CC","#AA66CC","#9933CC","#99CC00","#669900","#FFBB33","#FF8800","#FF4444","#CC0000"];
     var currentTime=new Date();
