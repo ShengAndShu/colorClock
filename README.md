@@ -5,8 +5,7 @@ colorClock是一个基于jQuery和canvas的插件，它能够在你的页面上�
     <script src="jquery.min.js"></script>
     <script src="colorClock.js"></script> 
 ###2.HTML
-    <canvas id="clock" style="right:0; bottom:0"></canvas>
-你可以自定义style中的位置<br><br>
+    <canvas id="clock""></canvas>
 ###3.javascript
     $(function(){
 	    $('clock').colorClock();
