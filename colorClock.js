@@ -1,12 +1,12 @@
 jQuery.fn.colorClock=function(options){
-    $options=$.extend({
+    var $options=$.extend({
         clockColor:"rgb(200,200,200)",
         canvasWidth:Math.round($(document).innerWidth()/4),
         canvasHeight:Math.round($(document).innerHeight()/4),
         paddingLeft:Math.round($(document).innerWidth()/80),
         paddingTop:Math.round($(document).innerHeight()/80),
         maxBalls:300,
-    },options);
+        },options);
     
     var clockColor=$options.clockColor,
         canvasWidth=$options.canvasWidth,
