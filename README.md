@@ -1,6 +1,6 @@
 # colorClock
 
-colorClock是一个基于jQuery和canvas的插件，它能够在你的页面上插入一个动画时钟blabla。
+一个基于jQuery和canvas的动画时钟
 
 ## 使用方法
 
